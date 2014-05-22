@@ -120,6 +120,7 @@ BITCOIN_CORE_H = \
   script/sign.h \
   script/standard.h \
   script/script_error.h \
+  crypto/scrypt.h \
   serialize.h \
   streams.h \
   sync.h \
@@ -268,6 +269,7 @@ libbitcoin_util_a_SOURCES = \
   clientversion.cpp \
   random.cpp \
   rpcprotocol.cpp \
+  crypto/scrypt.cpp \
   sync.cpp \
   uint256.cpp \
   util.cpp \
