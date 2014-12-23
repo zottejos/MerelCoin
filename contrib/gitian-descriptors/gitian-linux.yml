@@ -25,8 +25,8 @@ remotes:
 - "url": "https://github.com/litecoin-project/litecoin.git"
   "dir": "litecoin"
 files:
-- "bitcoin-deps-linux32-gitian-r8.zip"
-- "bitcoin-deps-linux64-gitian-r8.zip"
+- "bitcoin-deps-linux32-gitian-r9.zip"
+- "bitcoin-deps-linux64-gitian-r9.zip"
 - "boost-linux32-1.55.0-gitian-r1.zip"
 - "boost-linux64-1.55.0-gitian-r1.zip"
 - "qt-linux32-4.6.4-gitian-r1.tar.gz"
@@ -43,7 +43,7 @@ script: |
   #
   mkdir -p $STAGING
   cd $STAGING
-  unzip ../build/bitcoin-deps-linux${GBUILD_BITS}-gitian-r8.zip
+  unzip ../build/bitcoin-deps-linux${GBUILD_BITS}-gitian-r9.zip
   unzip ../build/boost-linux${GBUILD_BITS}-1.55.0-gitian-r1.zip
   tar -zxf ../build/qt-linux${GBUILD_BITS}-4.6.4-gitian-r1.tar.gz
   cd ../build
@@ -59,7 +59,7 @@ script: |
     local: *;
   };' > $LINKER_SCRIPT
   function do_configure {
-      ./configure "$@" --enable-upnp-default --prefix=$STAGING --with-protoc-bindir=$STAGING/host/bin --with-qt-bindir=$STAGING/bin --with-boost=$STAGING --disable-maintainer-mode --disable-dependency-tracking PKG_CONFIG_PATH="$STAGING/lib/pkgconfig" CPPFLAGS="-I$STAGING/include ${OPTFLAGS}" LDFLAGS="-L$STAGING/lib -Wl,--version-script=$LINKER_SCRIPT ${OPTFLAGS}" CXXFLAGS="-frandom-seed=bitcoin ${OPTFLAGS}" BOOST_CHRONO_EXTRALIBS="-lrt" --enable-glibc-back-compat
+      ./configure "$@" --enable-upnp-default --prefix=$STAGING --with-protoc-bindir=$STAGING/host/bin --with-qt-bindir=$STAGING/bin --with-boost=$STAGING --disable-maintainer-mode --disable-dependency-tracking PKG_CONFIG_PATH="$STAGING/lib/pkgconfig" CPPFLAGS="-I$STAGING/include ${OPTFLAGS}" LDFLAGS="-L$STAGING/lib -Wl,--version-script=$LINKER_SCRIPT ${OPTFLAGS}" CXXFLAGS="-frandom-seed=bitcoin ${OPTFLAGS}" --enable-glibc-back-compat
   }
   #
   cd litecoin

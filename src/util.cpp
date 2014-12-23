@@ -94,7 +94,6 @@ bool fPrintToDebugLog = true;
 bool fDaemon = false;
 bool fServer = false;
 string strMiscWarning;
-bool fNoListen = false;
 bool fLogTimestamps = false;
 volatile bool fReopenDebugLog = false;
 CClientUIInterface uiInterface;
@@ -376,7 +375,7 @@ bool ParseMoney(const char* pszIn, int64_t& nRet)
 
 // safeChars chosen to allow simple messages/URLs/email addresses, but avoid anything
 // even possibly remotely dangerous like & or >
-static string safeChars("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890 .,;_/:?@");
+static string safeChars("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890 .,;_/:?@()");
 string SanitizeString(const string& str)
 {
     string strResult;

@@ -337,20 +337,14 @@ void PaymentServer::initNetManager()
 
     QNetworkProxy proxy;
 
-    // Query active proxy (fails if no SOCKS5 proxy)
+    // Query active SOCKS5 proxy
     if (optionsModel->getProxySettings(proxy)) {
-        if (proxy.type() == QNetworkProxy::Socks5Proxy) {
-            netManager->setProxy(proxy);
+        netManager->setProxy(proxy);
 
-            qDebug() << "PaymentServer::initNetManager : Using SOCKS5 proxy" << proxy.hostName() << ":" << proxy.port();
-        }
-        else
-            qDebug() << "PaymentServer::initNetManager : No active proxy server found.";
+        qDebug() << "PaymentServer::initNetManager : Using SOCKS5 proxy" << proxy.hostName() << ":" << proxy.port();
     }
     else
-        emit message(tr("Net manager warning"),
-            tr("Your active proxy doesn't support SOCKS5, which is required for payment requests via proxy."),
-            CClientUIInterface::MSG_WARNING);
+        qDebug() << "PaymentServer::initNetManager : No active proxy server found.";
 
     connect(netManager, SIGNAL(finished(QNetworkReply*)),
             this, SLOT(netRequestFinished(QNetworkReply*)));
@@ -414,7 +408,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
                 emit receivedPaymentRequest(recipient);
             else
                 emit message(tr("URI handling"),
-                    tr("URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters."),
+                    tr("URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters."),
                     CClientUIInterface::ICON_WARNING);
 
             return;
@@ -429,7 +423,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
             emit receivedPaymentRequest(recipient);
         else
             emit message(tr("Payment request file handling"),
-                tr("Payment request file can not be read or processed! This can be caused by an invalid payment request file."),
+                tr("Payment request file cannot be read! This can be caused by an invalid payment request file."),
                 CClientUIInterface::ICON_WARNING);
 
         return;
@@ -628,7 +622,7 @@ void PaymentServer::netRequestFinished(QNetworkReply* reply)
         {
             qDebug() << "PaymentServer::netRequestFinished : Error processing payment request";
             emit message(tr("Payment request error"),
-                tr("Payment request can not be parsed or processed!"),
+                tr("Payment request cannot be parsed!"),
                 CClientUIInterface::MSG_ERROR);
         }
 

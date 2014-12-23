@@ -2,12 +2,25 @@ UNIX BUILD NOTES
 ====================
 Some notes on how to build Bitcoin in Unix. 
 
+Note
+---------------------
+Always use absolute paths to configure and compile bitcoin and the dependencies,
+for example, when specifying the the path of the dependency:
+
+	../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
+
+Here BDB_PREFIX must absolute path - it is defined using $(pwd) which ensures
+the usage of the absolute path.
+
 To Build
 ---------------------
 
-	./autogen.sh
-	./configure
-	make
+```bash
+./autogen.sh
+./configure
+make
+make install # optional
+```
 
 This will build bitcoin-qt as well if the dependencies are met.
 
@@ -51,11 +64,9 @@ Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
 Build requirements:
 
-	sudo apt-get install build-essential
-	sudo apt-get install libtool autotools-dev autoconf
-	sudo apt-get install libssl-dev
-
-for Ubuntu 12.04 and later:
+	sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
+	
+for Ubuntu 12.04 and later or Debian 7 and later libboost-all-dev has to be installed:
 
 	sudo apt-get install libboost-all-dev
 
@@ -79,10 +90,9 @@ To enable the change run
 
 	sudo apt-get update
 
-for other Ubuntu & Debian:
+for other Debian & Ubuntu (with ppa):
 
-	sudo apt-get install libdb4.8-dev
-	sudo apt-get install libdb4.8++-dev
+	sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
 Optional:
 
@@ -102,7 +112,7 @@ To build with Qt 4 you need the following:
 
 For Qt 5 you need the following:
 
-    sudo apt-get install libqt5gui5 libqt5core5 libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev
+    sudo apt-get install libqt5gui5 libqt5core5 libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
 libqrencode (optional) can be installed with:
 

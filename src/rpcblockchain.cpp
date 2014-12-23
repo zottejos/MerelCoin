@@ -222,7 +222,7 @@ Value getblockhash(const Array& params, bool fHelp)
 
     int nHeight = params[0].get_int();
     if (nHeight < 0 || nHeight > chainActive.Height())
-        throw runtime_error("Block number out of range.");
+        throw JSONRPCError(RPC_INVALID_PARAMETER, "Block height out of range");
 
     CBlockIndex* pblockindex = chainActive[nHeight];
     return pblockindex->GetBlockHash().GetHex();
@@ -316,6 +316,7 @@ Value gettxoutsetinfo(const Array& params, bool fHelp)
     Object ret;
 
     CCoinsStats stats;
+    pcoinsTip->Flush();
     if (pcoinsTip->GetStats(stats)) {
         ret.push_back(Pair("height", (int64_t)stats.nHeight));
         ret.push_back(Pair("bestblock", stats.hashBlock.GetHex()));
@@ -429,7 +430,7 @@ Value verifychain(const Array& params, bool fHelp)
     if (params.size() > 1)
         nCheckDepth = params[1].get_int();
 
-    return VerifyDB(nCheckLevel, nCheckDepth);
+    return CVerifyDB().VerifyDB(nCheckLevel, nCheckDepth);
 }
 
 Value getblockchaininfo(const Array& params, bool fHelp)
