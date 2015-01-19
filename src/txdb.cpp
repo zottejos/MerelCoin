@@ -212,8 +212,13 @@ bool CBlockTreeDB::LoadBlockIndexGuts()
                 pindexNew->nStatus        = diskindex.nStatus;
                 pindexNew->nTx            = diskindex.nTx;
 
-                if (!CheckProofOfWork(pindexNew->GetBlockHash(), pindexNew->nBits))
-                    return error("LoadBlockIndex() : CheckProofOfWork failed: %s", pindexNew->ToString());
+                // Litecoin: Disable PoW Sanity check while loading block index from disk.
+                // We use the sha256 hash for the block index for performance reasons.
+                // CheckProofOfWork() needs the scrypt hash which is discarded after a block is accepted.
+                // TODO: It would be technically correct to recompute the scrypt hash for this sanity check.
+                //       For now it is reasonable to trust what is on your local disk.
+                //if (!CheckProofOfWork(pindexNew->GetBlockHash(), pindexNew->nBits))
+                //    return error("LoadBlockIndex() : CheckProofOfWork failed: %s", pindexNew->ToString());
 
                 pcursor->Next();
             } else {
