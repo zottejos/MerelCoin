@@ -120,7 +120,6 @@ BITCOIN_CORE_H = \
   script/sign.h \
   script/standard.h \
   script/script_error.h \
-  crypto/scrypt.h \
   serialize.h \
   streams.h \
   sync.h \
@@ -211,6 +210,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/hmac_sha256.cpp \
   crypto/rfc6979_hmac_sha256.cpp \
   crypto/hmac_sha512.cpp \
+  crypto/scrypt.cpp \
   crypto/ripemd160.cpp \
   crypto/common.h \
   crypto/sha256.h \
@@ -218,6 +218,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/hmac_sha256.h \
   crypto/rfc6979_hmac_sha256.h \
   crypto/hmac_sha512.h \
+  crypto/scrypt.h \
   crypto/sha1.h \
   crypto/ripemd160.h
 
@@ -269,7 +270,6 @@ libbitcoin_util_a_SOURCES = \
   clientversion.cpp \
   random.cpp \
   rpcprotocol.cpp \
-  crypto/scrypt.cpp \
   sync.cpp \
   uint256.cpp \
   util.cpp \
@@ -356,6 +356,7 @@ include_HEADERS = script/bitcoinconsensus.h
 libbitcoinconsensus_la_SOURCES = \
   primitives/transaction.cpp \
   crypto/hmac_sha512.cpp \
+  crypto/scrypt.cpp \
   crypto/sha1.cpp \
   crypto/sha256.cpp \
   crypto/sha512.cpp \
