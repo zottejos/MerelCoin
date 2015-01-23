@@ -16,6 +16,9 @@ typedef int64_t CAmount;
 static const CAmount COIN = 100000000;
 static const CAmount CENT = 1000000;
 
+/** Dust Soft Limit: outputs below this threshold are allowed with penalty of 1000 bytes per txout */
+static const CAmount DUST_SOFT_LIMIT = 100000; // 0.001 LTC
+
 /** No amount larger than this (in satoshi) is valid */
 static const CAmount MAX_MONEY = 84000000 * COIN;
 inline bool MoneyRange(const CAmount& nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
@@ -34,7 +37,7 @@ public:
     CFeeRate(const CFeeRate& other) { nSatoshisPerK = other.nSatoshisPerK; }
 
     CAmount GetFee(size_t size) const; // unit returned is satoshis
-    CAmount GetFeePerK() const { return GetFee(1000); } // satoshis-per-1000-bytes
+    CAmount GetFeePerK() const { return GetFee(DUST_SOFT_LIMIT); } // satoshis-per-1000-bytes
 
     friend bool operator<(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK < b.nSatoshisPerK; }
     friend bool operator>(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK > b.nSatoshisPerK; }
