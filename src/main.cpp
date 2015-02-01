@@ -905,6 +905,7 @@ CAmount GetMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowF
     BOOST_FOREACH(const CTxOut& txout, tx.vout)
         if (txout.nValue < DUST_THRESHOLD)
             nBytes += 1000;
+            fAllowFree = false;
 
     CAmount nMinFee = ::minRelayTxFee.GetFee(nBytes);
 
