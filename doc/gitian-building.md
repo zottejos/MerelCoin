@@ -318,7 +318,7 @@ for gitian to work offline.
 Building Litecoin
 ----------------
 
-To build Liteocin (for Linux, OSX and Windows) just follow the steps under 'perform
+To build Litecoin (for Linux, OSX and Windows) just follow the steps under 'perform
 gitian builds' in [doc/release-process.md](release-process.md) in the litecoin repository.
 
 This may take a long time as it also builds the dependencies needed for each descriptor.
