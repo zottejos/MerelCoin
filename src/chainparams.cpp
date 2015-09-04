@@ -140,11 +140,15 @@ public:
         assert(hashGenesisBlock == uint256("0x"));
         assert(genesis.hashMerkleRoot == uint256("0x"));
 
-        vSeeds.push_back(CDNSSeedData("litecointools.com", "dnsseed.litecointools.com"));
-        vSeeds.push_back(CDNSSeedData("litecoinpool.org", "dnsseed.litecoinpool.org"));
-        vSeeds.push_back(CDNSSeedData("xurious.com", "dnsseed.ltc.xurious.com"));
-        vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com"));
-        vSeeds.push_back(CDNSSeedData("weminemnc.com", "dnsseed.weminemnc.com"));
+        vSeeds.push_back(CDNSSeedData("seed1.merel.mobi", "seed1.merel.mobi"));
+	vSeeds.push_back(CDNSSeedData("seed2.merel.mobi", "seed2.merel.mobi"));
+	vSeeds.push_back(CDNSSeedData("seed3.merel.mobi", "seed3.merel.mobi"));
+	vSeeds.push_back(CDNSSeedData("seed4.merel.mobi", "seed4.merel.mobi"));
+	vSeeds.push_back(CDNSSeedData("seed5.merel.mobi", "seed5.merel.mobi"));
+	vSeeds.push_back(CDNSSeedData("seed6.merel.mobi", "seed6.merel.mobi"));
+	vSeeds.push_back(CDNSSeedData("seed7.merel.mobi", "seed7.merel.mobi"));
+	vSeeds.push_back(CDNSSeedData("seed8.merel.mobi", "seed8.merel.mobi"));
+
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(50);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
