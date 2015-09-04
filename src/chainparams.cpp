@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress> &vSeedsOut, const SeedSpec6 *data
  */
 static Checkpoints::MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-	(  0, uint256("0x"))
+	(  0, uint256("0x40563a082842bc8d7b7036552ae8e232bf503226bc6a8fb5e46c9e706f32d6a5"))
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
@@ -66,7 +66,7 @@ static const Checkpoints::CCheckpointData data = {
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
         boost::assign::map_list_of
-	(   0, uint256("0x"))
+	(   0, uint256("0x40563a082842bc8d7b7036552ae8e232bf503226bc6a8fb5e46c9e706f32d6a5"))
         ;
 static const Checkpoints::CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
@@ -134,11 +134,11 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = 1441363588;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nNonce   = 0;
+        genesis.nNonce   = 352966;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x40563a082842bc8d7b7036552ae8e232bf503226bc6a8fb5e46c9e706f32d6a5"));
+        assert(genesis.hashMerkleRoot == uint256("0x6f88b9a6d527edb6d78b4eee5e0f51f272be0c1da7a916890a888108adfcf944"));
 
         vSeeds.push_back(CDNSSeedData("seed1.merel.mobi", "seed1.merel.mobi"));
 	vSeeds.push_back(CDNSSeedData("seed2.merel.mobi", "seed2.merel.mobi"));
@@ -201,9 +201,9 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1441363588;
-        genesis.nNonce = 0;
+        genesis.nNonce = 352966;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x40563a082842bc8d7b7036552ae8e232bf503226bc6a8fb5e46c9e706f32d6a5"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -257,12 +257,12 @@ public:
         nTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
         nTargetSpacing = 2.5 * 60; // 2.5 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1296688602;
-        genesis.nBits = 0x207fffff;
-        genesis.nNonce = 0;
+        genesis.nTime = 1441363588;
+        genesis.nBits = 0x1e0ffff0;
+        genesis.nNonce = 352966;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 19444;
-        assert(hashGenesisBlock == uint256("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"));
+        assert(hashGenesisBlock == uint256("0x40563a082842bc8d7b7036552ae8e232bf503226bc6a8fb5e46c9e706f32d6a5"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();  //! Regtest mode doesn't have any DNS seeds.
