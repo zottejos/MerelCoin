@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Izvēlies adresi uz kuru sūtīt litecoins</translation>
+        <translation>Izvēlies adresi uz kuru sūtīt merelcoins</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Izvēlies adresi ar kuru saņemt litecoins</translation>
+        <translation>Izvēlies adresi ar kuru saņemt merelcoins</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -148,8 +148,8 @@
         <translation>Apstiprināt maciņa šifrēšanu</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>Brīdinājums: Ja tu nošifrē savu maciņu un pazaudē paroli, tu &lt;b&gt;PAZAUDĒSI VISAS SAVAS LITECOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERELCOINS&lt;/b&gt;!</source>
+        <translation>Brīdinājums: Ja tu nošifrē savu maciņu un pazaudē paroli, tu &lt;b&gt;PAZAUDĒSI VISAS SAVAS MERELCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -164,8 +164,8 @@
         <translation>Maciņš nošifrēts</translation>
     </message>
     <message>
-        <source>Litecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
-        <translation>Litecoin aizvērsies, lai pabeigtu šifrēšanu. Atcerieties, ka maciņa šifrēšana nevar pilnībā novērst bitkoinu zādzību, ko veic datorā ieviesušās kaitīgas programmas.</translation>
+        <source>Merelcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your merelcoins from being stolen by malware infecting your computer.</source>
+        <translation>Merelcoin aizvērsies, lai pabeigtu šifrēšanu. Atcerieties, ka maciņa šifrēšana nevar pilnībā novērst bitkoinu zādzību, ko veic datorā ieviesušās kaitīgas programmas.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -271,8 +271,8 @@
         <translation>Atvērt &amp;URI...</translation>
     </message>
     <message>
-        <source>Litecoin Core client</source>
-        <translation>Litecoin Core klients</translation>
+        <source>Merelcoin Core client</source>
+        <translation>Merelcoin Core klients</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -283,12 +283,12 @@
         <translation>Bloku reindeksēšana no diska...</translation>
     </message>
     <message>
-        <source>Send coins to a Litecoin address</source>
-        <translation>Nosūtīt bitkoinus uz Litecoin adresi</translation>
+        <source>Send coins to a Merelcoin address</source>
+        <translation>Nosūtīt bitkoinus uz Merelcoin adresi</translation>
     </message>
     <message>
-        <source>Modify configuration options for Litecoin</source>
-        <translation>Mainīt Litecoin konfigurācijas uzstādījumus</translation>
+        <source>Modify configuration options for Merelcoin</source>
+        <translation>Mainīt Merelcoin konfigurācijas uzstādījumus</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -311,8 +311,8 @@
         <translation>&amp;Pārbaudīt ziņojumu...</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>Merelcoin</source>
+        <translation>Merelcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -327,8 +327,8 @@
         <translation>&amp;Saņemt</translation>
     </message>
     <message>
-        <source>Show information about Litecoin Core</source>
-        <translation>Parādīt informāciju par Litecoin Core</translation>
+        <source>Show information about Merelcoin Core</source>
+        <translation>Parādīt informāciju par Merelcoin Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -343,12 +343,12 @@
         <translation>Šifrēt privātās atslēgas kuras pieder tavam maciņam</translation>
     </message>
     <message>
-        <source>Sign messages with your Litecoin addresses to prove you own them</source>
-        <translation>Parakstīt ziņojumus ar savām Litecoin adresēm lai pierādītu ka tās pieder tev</translation>
+        <source>Sign messages with your Merelcoin addresses to prove you own them</source>
+        <translation>Parakstīt ziņojumus ar savām Merelcoin adresēm lai pierādītu ka tās pieder tev</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
-        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Litecoin adresēm</translation>
+        <source>Verify messages to ensure they were signed with specified Merelcoin addresses</source>
+        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Merelcoin adresēm</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -367,28 +367,28 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Core</translation>
+        <source>Merelcoin Core</source>
+        <translation>Merelcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un litecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and merelcoin: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un merelcoin: URIs)</translation>
     </message>
     <message>
-        <source>&amp;About Litecoin Core</source>
-        <translation>Par &amp;Litecoin Core</translation>
+        <source>&amp;About Merelcoin Core</source>
+        <translation>Par &amp;Merelcoin Core</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
-        <translation>Atvērt litecoin URI vai maksājuma pieprasījumu</translation>
+        <source>Open a merelcoin: URI or payment request</source>
+        <translation>Atvērt merelcoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komandrindas iespējas</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Litecoin network</source>
-        <translation><numerusform>%n aktīvu savienojumu ar Litecoin tīklu</numerusform><numerusform>%n aktīvs savienojums ar Litecoin tīklu</numerusform><numerusform>%n aktīvu savienojumu as Litecoin tīklu</numerusform></translation>
+        <source>%n active connection(s) to Merelcoin network</source>
+        <translation><numerusform>%n aktīvu savienojumu ar Merelcoin tīklu</numerusform><numerusform>%n aktīvs savienojums ar Merelcoin tīklu</numerusform><numerusform>%n aktīvu savienojumu as Merelcoin tīklu</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -688,8 +688,8 @@ Adrese: %4
         <translation>Nupat ierakstītā adrese "%1" jau atrodas adrešu grāmatā.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Litecoin address.</source>
-        <translation>Ierakstītā adrese "%1" nav derīga Litecoin adrese.</translation>
+        <source>The entered address "%1" is not a valid Merelcoin address.</source>
+        <translation>Ierakstītā adrese "%1" nav derīga Merelcoin adrese.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -722,8 +722,8 @@ Adrese: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Core</translation>
+        <source>Merelcoin Core</source>
+        <translation>Merelcoin Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -734,8 +734,8 @@ Adrese: %4
         <translation>(%1-biti)</translation>
     </message>
     <message>
-        <source>About Litecoin Core</source>
-        <translation>Par Litecoin Core</translation>
+        <source>About Merelcoin Core</source>
+        <translation>Par Merelcoin Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -769,8 +769,8 @@ Adrese: %4
         <translation>Sveiciens</translation>
     </message>
     <message>
-        <source>Welcome to Litecoin Core.</source>
-        <translation>Sveicināts Litecoin Core</translation>
+        <source>Welcome to Merelcoin Core.</source>
+        <translation>Sveicināts Merelcoin Core</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -781,8 +781,8 @@ Adrese: %4
         <translation>Izmantot pielāgotu datu mapi:</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Core</translation>
+        <source>Merelcoin Core</source>
+        <translation>Merelcoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -823,12 +823,12 @@ Adrese: %4
         <translation>&amp;Galvenais</translation>
     </message>
     <message>
-        <source>Automatically start Litecoin after logging in to the system.</source>
-        <translation>Automātiski sākt Litecoin pēc pieteikšanās sistēmā.</translation>
+        <source>Automatically start Merelcoin after logging in to the system.</source>
+        <translation>Automātiski sākt Merelcoin pēc pieteikšanās sistēmā.</translation>
     </message>
     <message>
-        <source>&amp;Start Litecoin on system login</source>
-        <translation>&amp;Sākt Litecoin reizē ar sistēmu</translation>
+        <source>&amp;Start Merelcoin on system login</source>
+        <translation>&amp;Sākt Merelcoin reizē ar sistēmu</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -876,15 +876,15 @@ Adrese: %4
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt litecoin &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt merelcoin &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Tērēt neapstiprinātu atlikumu</translation>
     </message>
     <message>
-        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Uz rūtera automātiski atvērt Litecoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
+        <source>Automatically open the Merelcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Uz rūtera automātiski atvērt Merelcoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -931,8 +931,8 @@ Adrese: %4
         <translation>Lietotāja interfeiss un &amp;valoda:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Litecoin.</source>
-        <translation>Šeit var iestatīt lietotāja valodu. Iestatījums aktivizēsies pēc Litecoin pārstartēšanas.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Merelcoin.</source>
+        <translation>Šeit var iestatīt lietotāja valodu. Iestatījums aktivizēsies pēc Merelcoin pārstartēšanas.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -944,7 +944,7 @@ Adrese: %4
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Vai rādīt Litecoin kontroles funkcijas vai nē.</translation>
+        <translation>Vai rādīt Merelcoin kontroles funkcijas vai nē.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -982,8 +982,8 @@ Adrese: %4
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Litecoin tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Merelcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Merelcoin tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1033,8 +1033,8 @@ Adrese: %4
         <translation>Maksājumu pieprasījuma kļūda</translation>
     </message>
     <message>
-        <source>Cannot start litecoin: click-to-pay handler</source>
-        <translation>Nevar palaist Litecoin: nospied-lai-maksātu apstrādātāju</translation>
+        <source>Cannot start merelcoin: click-to-pay handler</source>
+        <translation>Nevar palaist Merelcoin: nospied-lai-maksātu apstrādātāju</translation>
     </message>
     <message>
         <source>Refund from %1</source>
@@ -1189,8 +1189,8 @@ Adrese: %4
         <translation>Notīrīt konsoli</translation>
     </message>
     <message>
-        <source>Welcome to the Litecoin RPC console.</source>
-        <translation>Laipni lūgti Litecoin RPC konsolē.</translation>
+        <source>Welcome to the Merelcoin RPC console.</source>
+        <translation>Laipni lūgti Merelcoin RPC konsolē.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1374,7 +1374,7 @@ Adrese: %4
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Litecoin Kontroles Funkcijas</translation>
+        <translation>Merelcoin Kontroles Funkcijas</translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -1517,8 +1517,8 @@ Adrese: %4
         <translation>Transakcijas izveidošana neizdevās!</translation>
     </message>
     <message>
-        <source>Warning: Invalid Litecoin address</source>
-        <translation>Brīdinājums: Nederīga Litecoin adrese</translation>
+        <source>Warning: Invalid Merelcoin address</source>
+        <translation>Brīdinājums: Nederīga Merelcoin adrese</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1599,8 +1599,8 @@ Adrese: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Litecoin Core is shutting down...</source>
-        <translation>Litecoin Core tiek izslēgta...</translation>
+        <source>Merelcoin Core is shutting down...</source>
+        <translation>Merelcoin Core tiek izslēgta...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1646,8 +1646,8 @@ Adrese: %4
         <translation>Kopēt parakstu uz sistēmas starpliktuvi</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Litecoin address</source>
-        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Litecoin adreses īpašnieks.</translation>
+        <source>Sign the message to prove you own this Merelcoin address</source>
+        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Merelcoin adreses īpašnieks.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1729,8 +1729,8 @@ Adrese: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Core</translation>
+        <source>Merelcoin Core</source>
+        <translation>Merelcoin Core</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
