@@ -20,8 +20,8 @@ packages:
 - "zip"
 reference_datetime: "2013-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/merelcoin/litecoin.git"
-  "dir": "litecoin"
+- "url": "https://github.com/zottejos/merelcoin.git"
+  "dir": "merelcoin"
 files: []
 script: |
   WRAP_DIR=$HOME/wrapped
@@ -65,7 +65,7 @@ script: |
   done
   export PATH=${WRAP_DIR}:${PATH}
 
-  cd litecoin
+  cd merelcoin
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
